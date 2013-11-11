@@ -1,3 +1,4 @@
+package src;
 /**
  * main method entrance for partition corpus
  *

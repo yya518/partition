@@ -1,3 +1,4 @@
+package src;
 
 public class RandomPartitioner implements Partitioner {
 
