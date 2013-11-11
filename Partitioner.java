@@ -1,5 +1,5 @@
 
 public interface Partitioner {
 	
-	public void partition();
+	public void partition(Corpus corpus);
 }
