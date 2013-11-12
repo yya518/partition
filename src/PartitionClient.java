@@ -1,4 +1,3 @@
-package src;
 /**
  * main method entrance for partition corpus
  *
@@ -10,13 +9,13 @@ public class PartitionClient {
 		args = test.split(" ");
 		
 		CommandLineInterface cli= new CommandLineInterface();
-		int num_clusters = Integer.parseInt(cli.parseCommandLine(args).getOptionValue("n"));
+		int splits = Integer.parseInt(cli.parseCommandLine(args).getOptionValue("n"));
 		String name = cli.parseCommandLine(args).getOptionValue("t");
 		
 		Corpus corpus = new Corpus();
 		
 		Partitioner partitioner = PartitionerFactory.getPartitioner(name);
-		partitioner.partition(corpus);
+		partitioner.partition(corpus, splits);
 		
 	}
 	

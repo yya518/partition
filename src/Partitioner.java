@@ -1,6 +1,5 @@
-package src;
 
 public interface Partitioner {
 	
-	public void partition(Corpus corpus);
+	public void partition(Corpus corpus, int splits);
 }
