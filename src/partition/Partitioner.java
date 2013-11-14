@@ -26,8 +26,15 @@ public abstract class Partitioner {
 		this.tokenPerCluster = corpus.tokenCount / splits + 1; //get the ceiling
 	}
 	
+	/**
+	 * partition algorithm
+	 */
 	public abstract void partition();
 	
+	/**
+	 * write partitioned corpus splits to local disk
+	 * @throws Exception
+	 */
 	public void writeToDisk() throws Exception{
 		String directory = corpus.filebase.substring(0, corpus.filebase.lastIndexOf("/")) + "/splits/";
 		File dir = new File(directory);
@@ -52,6 +59,9 @@ public abstract class Partitioner {
 		reader.close();
 	}
 	
+	/**
+	 * count statistics for partition performance
+	 */
 	public void countType(){
 		ArrayList<Integer> typeCounts = new ArrayList<Integer>();
 		int countsSum = 0;
