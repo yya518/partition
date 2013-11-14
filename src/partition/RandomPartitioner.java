@@ -12,7 +12,8 @@ public class RandomPartitioner extends Partitioner {
 	
 	@Override
 	public void partition() {
-		Collections.shuffle(corpus.sentences, new Random(0));
+		long seed = System.currentTimeMillis();
+		Collections.shuffle(corpus.sentences, new Random(seed));
 		int lineId = 0;
 		int sentence_left = corpus.sentences.size();
 		for(int i = 0; i < splits; i++){

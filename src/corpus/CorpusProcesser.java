@@ -71,7 +71,7 @@ public class CorpusProcesser {
 			for(int i = 0 ; i < tokens.length; i++){
 				types.add(tokens[i]);
 			}
-			writer.write(types.size() + " " + tokens.length + ": ");
+			writer.write(types.size() + " " + tokens.length + ":");
 			for(String type : types){
 				int index = wordmap.get(type);
 				writer.write(index + " ");

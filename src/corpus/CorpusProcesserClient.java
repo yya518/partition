@@ -3,7 +3,7 @@ package corpus;
 public class CorpusProcesserClient {
 	
 	public static void main(String[] args) throws Exception{
-		String file = "/home/yyyn/partition/dataset/brown/brown.corpus";
+		String file = "/Users/yiyang/Documents/workspace/PartitionCode/dataset/brown/brown.corpus";
 		
 		CorpusProcesser processer = new CorpusProcesser(file);
 		processer.createVocab();

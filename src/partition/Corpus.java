@@ -29,7 +29,7 @@ public class Corpus {
 			int typecount = Integer.parseInt(sentence[0].split(" ")[0]);
 			int tokencount = Integer.parseInt(sentence[0].split(" ")[1]);
 			String content = sentence[1];
-			sentences.add(new Sentence(content, typecount, tokencount, sId));
+			sentences.add(new Sentence(content, sId, tokencount, typecount));
 			sId++;
 		}
 		reader.close();
