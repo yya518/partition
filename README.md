@@ -9,13 +9,8 @@ we use the following file name conventions:
 File formats:
 
 - *.corpus:	the raw documents collection, each line is a document
-- *.vocab:	the first line is consisted of total word types and total word tokens, 
-			and the rest of lines is a word type and its index mapping
-- *.index: 	the first line is consisted of total word types and total word tokens,
-			and the rest of lines are indexed documents. For each line, 
-			two numbers before colon : is the word type size and word token size for that document,
-			and the	rest part is the bag of words for that sentence. Also, each raw
-			word is translated to its index.
+- *.vocab:	the first line is consisted of total word types and total word tokens, and the rest of lines is a word type and its index mapping
+- *.index: 	the first line is consisted of total word types and total word tokens, and the rest of lines are indexed documents. For each line, two numbers before colon : is the word type size and word token size for that document, and the	rest part is the bag of words for that sentence. Also, each raw word is translated to its index.
 
 			For example:   
 			
