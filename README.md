@@ -24,7 +24,7 @@ command line sample:
 CorpusProcesserClient /absolute_path/dataset/brown/brown.corpus
 
 
-<b>Second step</b>: Partition corpus, i.e., *.index file
+**Second step**: Partition corpus, i.e., *.index file
 command line arguments:
 
 -h:					print help information
