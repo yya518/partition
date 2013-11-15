@@ -18,7 +18,8 @@ File formats:
 			word is translated to its index
 
 			For example:   
-				16 17:18 24 226 1 15 69 231 229 230 227 109 23 232 80 58 228
+			
+			16 17:18 24 226 1 15 69 231 229 230 227 109 23 232 80 58 228
 				
 			This document has 16 word types, and 17 word tokens. The indexed
 			bag of words are shown after colon.
@@ -39,6 +40,7 @@ command line arguments:
 - -f:					target corpus file absolute path, use the *.index file generated in the first step
 
 command sample:
+
 	PartitionClient -n 50 -t batch -f /absolute_path/dataset/brown/brown.index
 	
 The above command partition brown corpus in 50 splits using batch algorithm.
