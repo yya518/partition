@@ -35,3 +35,8 @@ command sample:
 	PartitionClient -n 50 -t batch -f /absolute_path/dataset/brown/brown.index
 	
 The above command partition brown corpus in 50 splits using batch algorithm.
+
+
+**extenal Java library**
+
+We are using commons-cli-1.2.jar and guava-r05.jar open source Java libraries (under /lib/ directory). In order to compile, you need to add them to your workspace.
