@@ -1,4 +1,4 @@
-First step: Pre-processing corpus
+**First step: Pre-processing corpus**
 we use the following file name conventions:
 -corpus file: 		*.corpus
 -vocabulary file:	*.vocab
@@ -24,13 +24,13 @@ command line sample:
 CorpusProcesserClient /absolute_path/dataset/brown/brown.corpus
 
 
-**Second step**: Partition corpus, i.e., *.index file
+**Second step: Partition corpus, i.e., *.index file**
 command line arguments:
 
 -h:					print help information
 -n:					partition size
 -t:					partition algorithm type, currently support *random* and *batch*
--f:					target corpus file absolute path
+-f:					target corpus file absolute path, use the *.index file generated in the first step
 
 command sample:
 	PartitionClient -n 50 -t batch -f /absolute_path/dataset/brown/brown.index
