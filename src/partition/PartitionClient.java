@@ -6,7 +6,7 @@ package partition;
 public class PartitionClient {
 
 	public static void main(String[] args) throws Exception{
-		String test = "-n 50 -t batch -f /Users/yiyang/Documents/workspace/PartitionCode/dataset/brown/brown.index";
+		String test = "-n 50 -t batch -f /home/yyyn/partition/dataset/brown/brown.index";
 		args = test.split(" ");
 		
 		CommandLineInterface cli= new CommandLineInterface();
@@ -21,7 +21,7 @@ public class PartitionClient {
 		Partitioner partitioner = PartitionerFactory.getPartitioner(name, corpus, splits);
 		partitioner.partition();
 		//partitioner.writeToDisk();
-		//partitioner.countType();
+		partitioner.countType();
 	}
 
 	private static void checkValid(Corpus corpus, int splits) {
