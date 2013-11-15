@@ -16,8 +16,10 @@ File formats:
 			two numbers before colon : is the word type size and word token size for that document,
 			and the	rest part is the bag of words for that sentence. Also, each raw
 			word is translated to its index
+
 			For example:   
 				16 17:18 24 226 1 15 69 231 229 230 227 109 23 232 80 58 228
+				
 			This document has 16 word types, and 17 word tokens. The indexed
 			bag of words are shown after colon.
 
