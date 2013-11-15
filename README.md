@@ -27,7 +27,7 @@ command line arguments:
 
 - -h:					print help information
 - -n:					partition size
-- -t:					partition algorithm type, currently support *random* and *batch*
+- -t:					partition algorithm type, currently support **random** and **batch**
 - -f:					target corpus file absolute path, use the *.index file generated in the first step
 
 command sample:
